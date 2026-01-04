@@ -9,10 +9,14 @@
 
 /* Color palette: Rustic, modern */
 :root {
-    --bg-color: #f4f1ec;        /* warm off-white */
-    --text-color: #2f2f2f;      /* soft charcoal */
-    --accent-color: #6b705c;    /* muted moss green */
-    --nav-bg: #e7e3dc;          /* subtle contrast */
+    --bg-color: #f4f1ec;
+    /* warm off-white */
+    --text-color: #2f2f2f;
+    /* soft charcoal */
+    --accent-color: #6b705c;
+    /* muted moss green */
+    --nav-bg: #e7e3dc;
+    /* subtle contrast */
     --border-color: #c9c3b8;
 }
 
@@ -97,7 +101,7 @@ h1 {
     font-size: 2.8rem;
     font-weight: 500;
     margin-bottom: 1rem;
-    
+
 }
 
 h2 {
@@ -121,6 +125,29 @@ h2 {
 section p {
     margin-top: 0.5rem;
 }
+
+/* Albums list */
+.album-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1.5rem;
+    max-width: 600px;
+}
+
+.album-list a {
+    padding: 0.75rem 0;
+    /* border-bottom: 1px solid var(--border-color); */
+    text-decoration: none;
+    color: #2f2f2f;
+    font-size: 1.05rem;
+}
+
+/* Optional subtle hover */
+.album-list a:hover {
+    color: var(--accent-color);
+}
+
+
 
 /* Responsive */
 @media (max-width: 600px) {
@@ -147,9 +174,3 @@ section p {
         height: 13em;
     }
 }
-
-
-
-
-
-
