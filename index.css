@@ -1,0 +1,155 @@
+/* index.css */
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color palette: Rustic, modern */
+:root {
+    --bg-color: #f4f1ec;        /* warm off-white */
+    --text-color: #2f2f2f;      /* soft charcoal */
+    --accent-color: #6b705c;    /* muted moss green */
+    --nav-bg: #e7e3dc;          /* subtle contrast */
+    --border-color: #c9c3b8;
+}
+
+/* Base styles */
+body {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--nav-bg);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 2rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.navbar a:hover {
+    color: var(--accent-color);
+}
+
+/* Main layout */
+main {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+/* Sections */
+section {
+    margin-bottom: 4rem;
+}
+
+/* About header layout */
+.about-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.about-text {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3em;
+
+}
+
+/* Profile image container */
+.profile-image img {
+    width: 15em;
+    height: 15em;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+}
+
+
+
+/* Headings */
+h1 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+
+
+/* Summary text */
+.summary {
+    max-width: 600px;
+    font-size: 1.05rem;
+    color: #444;
+}
+
+/* Subtle rustic touch */
+section p {
+    margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .about-header {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .about-text {
+        display: block;
+    }
+
+    .profile-image img {
+        width: 13em;
+        height: 13em;
+    }
+}
+
+
+
+
+
+
