@@ -1,7 +1,9 @@
 /* index.css */
 
 /* CSS Reset */
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,6 +12,7 @@
 /* Color palette: Rustic, modern */
 :root {
     --bg-color: #f4f1ec;
+    --nav-text-color: #f4f1ec;
     /* warm off-white */
     --text-color: #2f2f2f;
     /* soft charcoal */
@@ -28,11 +31,28 @@ body {
     line-height: 1.7;
 }
 
+/* Main */
+
+
+
 /* Navbar */
 .navbar {
-    background-color: var(--nav-bg);
+    position: relative;
+    background: url("images/noemie-sitting.jpg");
+    background-size: cover;
+    background-position: 20%;
     border-bottom: 1px solid var(--border-color);
     padding: 1rem 2rem;
+
+}
+
+.navbar::after {
+    position: absolute;
+    inset: 0;
+    opacity: 70%;
+    content: "";
+    background-color: #2f2f2f;
+    z-index: 1;
 }
 
 .navbar ul {
@@ -44,8 +64,10 @@ body {
 }
 
 .navbar a {
+    position: relative;
+    z-index: 2;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--nav-text-color);
     font-weight: 500;
     letter-spacing: 0.05em;
     text-transform: uppercase;
