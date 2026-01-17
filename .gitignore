@@ -1,8 +1,12 @@
 # Dependencies
 node_modules/
 
-# Biome cache
+# Biome
 .biome/
+biome.json
+biome.jsonc
+biome.config.json
+biome.config.jsonc
 
 # Logs
 *.log
