@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Biome cache
+.biome/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
