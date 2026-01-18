@@ -227,7 +227,7 @@ section p {
 
 
 /* Responsive */
-@media (max-width: 600px) {
+@media (max-width:800px) {
     .navbar ul {
         flex-direction: column;
         gap: 1rem;
@@ -257,5 +257,11 @@ section p {
     .profile-image img {
         width: 13em;
         height: 20em;
+    }
+}
+
+@media (orientation: landscape) {
+    .navbar ul {
+        flex-direction: row;
     }
 }
