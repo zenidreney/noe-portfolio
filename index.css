@@ -85,7 +85,7 @@ nav.navbar a.active {
     border-bottom: 2px solid var(--accent-color);
 }
 
-/* Main layout */
+/* Main layout Header and Footer */
 main,
 footer {
     max-width: 900px;
@@ -135,13 +135,15 @@ section.about .profile-image img {
 div.contact {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    flex-direction: column;
 }
 
 div.contact a {
     text-decoration: none;
     font-style: italic;
     color: var(--accent-color);
+
 }
 
 div.contact a:hover,
@@ -228,6 +230,11 @@ ul.album-list a:hover {
         width: 20em;
         height: 32em;
     }
+
+    div.contact {
+    
+    flex-direction: row;
+}
 }
 
 /* Landscape refinement */
