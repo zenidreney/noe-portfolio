@@ -11,6 +11,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about.css">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
                 <li><a href="about.html" class="active">About</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="index.html#about">Albums</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -35,10 +36,8 @@
 
         <article itemscope itemtype="https://schema.org/MusicGroup">
 
-            <header>
-                <div class="profile-image">
-                    <img src="/images/noe-profile.jpg" alt="Profile picture of Noemie Beauvais">
-                </div>
+            <header class="about-header">
+
                 <h1 itemprop="name">Noémie Beauvais - Guitarist, Composer & Music Therapist</h1>
                 <p itemprop="description">
                     A multidisciplinary musician blending classical guitar, world music, improvisation
@@ -132,6 +131,9 @@
                     snow-capped Alps—a hymn to Beauty and Freedom that leaves no one indifferent.
                 </p>
             </section>
+            <div class="profile-image">
+                <img src="/images/noe-profile.jpg" alt="Profile picture of Noemie Beauvais">
+            </div>
 
         </article>
 
@@ -140,11 +142,18 @@
     <footer>
 
         <!-- Contact Section -->
-        <section id="contact">
+        <section>
             <h2>Contact</h2>
-            <p>
-                email: <a href="mailto:beauvaisnoemie@gmail.com">beauvaisnoemie@gmail.com</a>
-            </p>
+            <div class="contact" id="contact">
+                <div>
+                    <p>
+                        email: <a href="mailto:beauvaisnoemie@gmail.com">beauvaisnoemie@gmail.com</a>
+                    </p>
+                </div>
+                <div>
+                    <p>Website by: <a href="https://zenid.netlify.app">ZenidReney Web Development</a></p>
+                </div>
+            </div>
         </section>
 
     </footer>

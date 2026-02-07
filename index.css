@@ -86,7 +86,8 @@ nav.navbar a.active {
 }
 
 /* Main layout */
-main {
+main,
+footer {
     max-width: 900px;
     margin: 4rem auto;
     padding: 0 2rem;
@@ -129,6 +130,23 @@ section.about .profile-image img {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transform: scale(80%);
     filter: brightness(1.2) contrast(1.2);
+}
+
+div.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.contact a {
+    text-decoration: none;
+    font-style: italic;
+    color: var(--accent-color);
+}
+
+div.contact a:hover,
+div.contact a:focus {
+    color: var(--text-color)
 }
 
 /* Headings */

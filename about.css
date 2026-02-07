@@ -1,0 +1,15 @@
+header.about-header {
+    margin-bottom: 30px;
+}
+
+div.profile-image {
+    display: flex;
+    justify-content: center;
+}
+
+div.profile-image img {
+    border-radius: 20px;
+    width: 80%;
+    max-width: 520px;
+    height: 90%;
+}
