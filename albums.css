@@ -11,14 +11,13 @@ div.tracks-container {
 
 div.albums-container iframe,
 div.tracks-container iframe {
-    
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     line-height: 0;
 }
 
 div.albums-container iframe {
-    aspect-ratio: 350 / 470;
+    aspect-ratio: 350 / 468;
 }
 
 div.tracks-container iframe {
